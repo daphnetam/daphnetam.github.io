@@ -1,47 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FCC: Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+<head>
+
 <body id="main">
-  <header>
-    <h1 id="title"> Madam C.J. Walker </h1>
-    <h5 id="title-smalltext"> The first female self-made millionaire in America </h5> 
-  </header> 
+  <div>
+    <h1 id="title"> FreeCodeCamp Survey form </h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform! </p>
+  </div> 
   
-  <div id="img-div">
-    <img id="image" src="https://media.vanityfair.com/photos/5e792c1b9c91c7000979705c/7:3/w_1995,h_855,c_limit/Madam-CJ-Walker-Self-Made.jpg" alt="Madam C.J. Walker circa 1914">
-    <p id="img-caption"> Madam C.J. Walker driving in 1911 </p>
-  </div>
+  <br>
+  
+  <div id="form-container">
+    <form id="survey-form">
+      <label for="name" id="name-label" class="labels">*Name: </label><br>
+      <input type="text" id="name" class="inputbox" name="name" placeholder="Enter your name" required><br></br>
+      
+      <label for="email" id="email-label" class="labels"> *Email: </label><br>
+      <input type="email" id="email" class="inputbox" name="email" placeholder="Enter your email" required><br></br>
+      
+      <label for="age" id="number-label" class="labels"> Age (optional) : </label><br>
+      <input type="number" id="number" class="inputbox" name="age" placeholder="Enter your age" min="10" max="100"> <br></br>
+      
+      <label for="dropdown" id="dropdown" class="labels"> Which option best describes your current role? </label><br>
+      <select id="dropdown" name="current-role" class="inputbox">
+        <option id="dropdown" selected="selected">Select current role</option>
+        <option id="dropdown" value="student">Student</option>
+        <option id="dropdown" value="fulltimejob">Full Time Job</option>
+        <option id="dropdown" value="fulltimelearner">Full Time Learner</option>
+        <option id="dropdown" value="prefernottosay">Prefer not to say </option>
+        <option id="dropdown" value="other">Other</option>
+      </select><br></br>  
+      
+      <label for="radio" class="labels"> Would you recommend freeCodeCamp to a friend? </label> <br>
+      <input id="radio" type="radio" name="definitely-maybe-notsure" value="definitely">Definitely</input><br>
+    <input id="radio" type="radio" name="definitely-maybe-notsure" value="maybe">Maybe</input><br>
+  <input id="radio" type="radio" name="definitely-maybe-notsure" value="notsure">Not sure</input><br></br>
+  
+  
+      <label for="checkbox" class="labels"> What would you like to see improved? (Check all that apply) </label><br>
+      <input id="checkbox" type="checkbox" name="features" value="front-endprojects">Front-End Projects</input><br>
+      <input id="checkbox" type="checkbox" name="features" value="back-endprojects">Back-End Projects</input><br>
+      <input id="checkbox" type="checkbox" name="features" value="datavisualization">Data Visualization</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="challenges">Challenges</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="opensourcecommunity">Open Source Community</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="gitterhelprooms">Gitter help rooms</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="videos">Videos</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="citymeetups">City Meetups</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="Wiki">Wiki</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="Forum">Forum</input><br>
+    <input id="checkbox" type="checkbox" name="features" value="additionalcourses">Additional Courses</input><br></br>
 
-  <div id="tribute-info">
-    <h3> A brief timeline of Madam C.J. Walker's life: </h3>
-    <ul>
-      <li><b>1867</b>: Born in Delta, Louisiana</li>
-      <li><b>1874</b>: Becomes orphaned at the age of 7</li>
-      <li><b>1877</b>: Moves to Vicksburg, Mississippi, at the age of 10, where she lives with Louvenia and her brother-in-law, Jesse Powell</li>
-      <li><b>1882</b>: Marries Moses McWilliams at the age of 14 to escape abuse from her brother-in-law </li>
-      <li><b>1885</b>: Has her first child, Lelia Walker </li>
-      <li><b>1888</b>: Madam C. J. Walker and her daughter move to St. Louis, where she works as a laundress </li>
-      <li><b>1904</b>: Becomes a commission agent selling products for Annie Malone, an African-American hair-care entrepreneur </li>
-      <li><b>1905</b>: Moves to Denver, Colorado, where she continues to sell products for Malone and develops her own hair-care business </li>
-      <li><b>1906</b>: Marries Charles Joseph Walker, a newspaper advertising salesman, and becomes known as Madam C.J. Walker </li>
-      <li><b>1907</b>: Walker and her husband relocate to Pittsburgh, Pennsylvania, where they open a beauty parlor and establish Lelia College to train "hair culturists" </li>
-      <li><b>1910</b>: Establishes new base in Indianapolis </li>
-      <li><b>1913</b>: Sets up an office and beauty salon in New York City's growing Harlem neighborhood </li>
-      <li><b>1917</b>: Establishment of the National Beauty Culturists and Benevolent Association of Madam C. J. Walker Agents </li>
-      <li><b>1919</b>: Dies from kidney failure and complications of hypertension at the age of 51 </li>
-    </ul>  
-    
-    <div id="quote"> 
-    <img id="portrait" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Madam_CJ_Walker_face_circa_1914.jpg">  
-      <p>“I am a woman who came from the cotton fields of the South. From there I was promoted to the washtub. From there I was promoted to the cook kitchen. And from there I promoted myself into the business of manufacturing hair goods and preparations….I have built my own factory on my own ground.” 
-      <br></br>
-    -- Madam C.J. Walker, 1912 </p>
-    </div>
+    <label for="comments" id="comments" class="labels"> Any comments or suggestions? </label><br>
+    <textarea id="comments" class="inputbox" name="comments" rows="5" placeholder="Enter your comments here..."></textarea><br></br>
+
+    <button type="submit" id="submit">Submit</button><br></br>
+     
+    </form>  
   </div>  
-
-<br></br>
-
-  <div id="more-info">
-    If you have time, you should read more about this incredible human being on her <a href="https://en.wikipedia.org/wiki/Madam_C._J._Walker" id="tribute-link" target="_blank"> Wikipedia Entry</a>!
-  </div>   
   
-</body> 
+</body>
+<!-- partial -->
+  
+</body>
+</html>
